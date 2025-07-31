@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: magenta;
+        }
+        .pos{
+            text-align: center;
+        }
+        .t1{
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: pink;
+            margin: auto;
+        }
+        th,td{
+            border: 1px solid black;
+            font-size: 30px;
+        } 
+        .t2{
+            border-collapse: collapse;
+        }
+
+        .t2 td{
+            padding: 10px; 
+            margin: 0;       
+        }
+        .gbr-tabel{
+            display: block;
+            width: 100px;
+        }
+        .t2 tr:first-child th:first-child{
+            background-color: yellow;
+        }
+        .t2 tr:nth-child(2) td:first-child{
+            background-color: rgb(191, 191, 126);
+        }
+        .t2 tr:nth-child(2) td:nth-child(2),
+        .t2 tr:nth-child(3) td:nth-child(1),
+        .t2 tr:nth-child(4) td:nth-child(1) {
+            background-color: green;
+        }
+        .t2 tr:nth-child(2) td:nth-child(3),
+        .t2 tr:nth-child(3) td:nth-child(2),
+        .t2 tr:nth-child(4) td:nth-child(2) {
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <marquee style="text-transform: uppercase;">ini tulisan berjalan diatas</marquee>
+    <h3>perhatikan bahwa halaman ini seharusnya berwarna magenta</h3>
+    <h1>ini adalah heading 1</h1>
+    <h2>ini adalah heading 2</h2>
+    <h3>ini adalah heading 3</h3>
+    <h4>ini adalah heading 4</h4>
+    <h5>ini adalah heading 5</h5>
+    <h6>ini adalah heading 6</h6>
+    <p>gunakan heading hanya untuk heading saja</p>
+    <h1 class="pos">ini adalah heading 1</h1>
+    <p>heading diatas telah diposisikan untuk berada ditengah halamaan ini</p>
+
+    <table class="t1">
+        <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Tempat, Tgl.Lahir</th>
+            <th>Jurusan</th>
+        </tr>
+        <tr>
+            <td>12110001</td>
+            <td>ANITA</td>
+            <td>Cengkareng</td>
+            <td>Jakarta, 20 Agustus 1990</td>
+            <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+            <td>12110002</td>
+            <td>Aditya</td>
+            <td>Tangerang</td>
+            <td>Semarang, 01 Januari 1989</td>
+            <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+            <td>12110003</td>
+            <td>Firman</td>
+            <td>bogor</td>
+            <td>Jakarta, 18 September 1988</td>
+            <td>Teknik Informatika</td>
+        </tr>
+    </table>
+    <br>
+
+    <table class="t2">
+        <tr>
+            <th colspan="3">DAFTAR PRODUCT</th>
+        </tr>
+        <tr>
+            <td rowspan="3"><img src="download.jpeg" alt="" class="gbr-tabel"></td>
+            <td>Nama Produk</td>
+            <td>Canon EOS M10 Kit EF 15-45 mm</td>
+        </tr>
+        <tr>
+            <td>Harga</td>
+            <td>Rp 4.899.000</td>
+        </tr>
+        <tr>
+            <td>fitur produk</td>
+            <td>
+                <ul>
+                    <li>kamera mirrorless</li>
+                    <li>efektifitas piksel: 18MP</li>
+                    <li>Tipe Sensor: CMOS DIGIC 6</li>
+                    <li>Layar : 3.0inch</li>
+                    <li>Memiliki lampu flash dengan jarak jangkauan hingga 5 meter</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
